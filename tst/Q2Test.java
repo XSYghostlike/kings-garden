@@ -22,5 +22,6 @@ public class Q2Test {
         assertEquals(ListNode.toListNode(new int[]{}), q2.addTwoNumbers(ListNode.toListNode(new int[]{}), ListNode.toListNode(new int[]{})));
         assertEquals(ListNode.toListNode(new int[]{0,5}), q2.addTwoNumbers(ListNode.toListNode(new int[]{}), ListNode.toListNode(new int[]{0,5})));
         assertEquals(ListNode.toListNode(new int[]{0,0,0,1}), q2.addTwoNumbers(ListNode.toListNode(new int[]{1}), ListNode.toListNode(new int[]{9,9,9})));
+        assertEquals(ListNode.toListNode(new int[]{9,0,0,1}), q2.addTwoNumbers(ListNode.toListNode(new int[]{0,1}), ListNode.toListNode(new int[]{9,9,9})));
     }
 }
