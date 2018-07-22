@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Q3Test {
+class Q3Test {
 
     private Q3 q3;
 

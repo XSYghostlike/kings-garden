@@ -4,7 +4,7 @@ import structures.ListNode;
 
 import static org.junit.Assert.*;
 
-public class Q2Test {
+class Q2Test {
 
     private Q2 q2;
 

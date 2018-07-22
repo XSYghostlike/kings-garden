@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.*;
 
-public class Q1Test {
+class Q1Test {
 
     private Q1 q1;
 
