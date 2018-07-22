@@ -2,7 +2,7 @@
 
 import structures.ListNode;
 
-public class Q2 {
+class Q2 {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode head = new ListNode(-1);
         ListNode curr = head;

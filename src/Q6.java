@@ -2,7 +2,7 @@
 
 import static java.lang.Math.min;
 
-public class Q6 {
+class Q6 {
     public String convert(String s, int numRows) {
         if (numRows == 1 || s.length() == 0) {
             return s;

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import static java.lang.Math.min;
 
-public class Q4 {
+class Q4 {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int totalLength = nums1.length + nums2.length;
 

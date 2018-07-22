@@ -1,6 +1,6 @@
 // 5. Longest Palindromic Substring
 
-public class Q5 {
+class Q5 {
     public String longestPalindrome(String s) {
         if (s.length() == 0) return "";
 

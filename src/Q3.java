@@ -5,7 +5,7 @@ import java.util.Set;
 
 import static java.lang.Math.max;
 
-public class Q3 {
+class Q3 {
     public int lengthOfLongestSubstring(String s) {
         int maxLen = 0;
         int headIndex = 0;

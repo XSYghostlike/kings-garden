@@ -3,7 +3,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class Q1 {
+class Q1 {
     public int[] twoSum(int[] nums, int target) {
         Map map = new HashMap<Integer, Integer>();
         int[] result = new int[2];
