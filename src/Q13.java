@@ -10,10 +10,10 @@ class Q13 {
         int index = 0;
         int temp, digit;
 
-        String[][] board = {{"I", "V", "X"},{"X","L","C"},{"C","D","M"},{"M"," "," "}};
+        String[] board = {"I","V","X","L","C","D","M"," "," "};
 
         while (!s.equals("")) {
-            temp = generate(s, board[index][0], board[index][1], board[index][2]);
+            temp = generate(s, board[index*2], board[index*2+1], board[index*2+2]);
             digit = temp % 10;
             s = s.substring(0, s.length() - temp / 10);
             result = result + digit * (int)pow(10, index);
