@@ -2,8 +2,6 @@
 
 import java.util.Arrays;
 
-import static java.lang.Math.min;
-
 class Q4 {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int totalLength = nums1.length + nums2.length;
@@ -23,10 +21,10 @@ class Q4 {
         }
 
         if (k == 1) {
-            return min(arr1[0], arr2[0]);
+            return Math.min(arr1[0], arr2[0]);
         }
 
-        int arr1_BreakPoint = min(arr1.length, k/2) - 1;
+        int arr1_BreakPoint = Math.min(arr1.length, k/2) - 1;
         int arr2_BreakPoint = k/2 - 1;
 
         if (arr1[arr1_BreakPoint] < arr2[arr2_BreakPoint]) {

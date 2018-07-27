@@ -1,8 +1,5 @@
 // 13. Roman to Integer
 
-import static java.lang.Math.max;
-import static java.lang.Math.pow;
-
 class Q13 {
     // input 1 - 3999.
     public int romanToInt(String s) {
@@ -16,7 +13,7 @@ class Q13 {
             temp = generate(s, board[index*2], board[index*2+1], board[index*2+2]);
             digit = temp % 10;
             s = s.substring(0, s.length() - temp / 10);
-            result = result + digit * (int)pow(10, index);
+            result = result + digit * (int)Math.pow(10, index);
             index++;
         }
 
@@ -24,7 +21,7 @@ class Q13 {
     }
 
     private int generate(String s, String one, String five, String ten) {
-        String str = s.substring(max(s.length()-4, 0));
+        String str = s.substring(Math.max(s.length()-4, 0));
         if (str.contains(five + one + one + one)) return 48;
         if (str.contains(five + one + one)) return 37;
         if (str.contains(five + one)) return 26;

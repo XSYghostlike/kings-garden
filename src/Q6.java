@@ -1,7 +1,5 @@
 // 6. ZigZag Conversion
 
-import static java.lang.Math.min;
-
 class Q6 {
     public String convert(String s, int numRows) {
         if (numRows == 1 || s.length() == 0) {
@@ -23,8 +21,8 @@ class Q6 {
 
         int indexRemainder = i % cycleItemsCount;
         int totalLengthRemainder = lastIndex % cycleItemsCount;
-        int indexReminderConvert = min(indexRemainder, cycleItemsCount - indexRemainder);
-        int totalLengthReminderConvert = min(totalLengthRemainder, cycleItemsCount - totalLengthRemainder);
+        int indexReminderConvert = Math.min(indexRemainder, cycleItemsCount - indexRemainder);
+        int totalLengthReminderConvert = Math.min(totalLengthRemainder, cycleItemsCount - totalLengthRemainder);
         int indexCycles = i / cycleItemsCount;
         int totalCycles = lastIndex / cycleItemsCount;
 
